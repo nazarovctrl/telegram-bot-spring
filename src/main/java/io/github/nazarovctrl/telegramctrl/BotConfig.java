@@ -1,4 +1,4 @@
-package ctrl.nazarov.telegramctrl;
+package io.github.nazarovctrl.telegramctrl;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
