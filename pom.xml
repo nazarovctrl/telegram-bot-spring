@@ -6,16 +6,45 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.1.2</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
-    <groupId>ctrl.nazarov</groupId>
+    <groupId>io.github.nazarovctrl</groupId>
     <artifactId>telegram-ctrl</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>telegram-ctrl</name>
+
+    <packaging>jar</packaging>
+    <version>1.0</version>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+
     <description>telegram-ctrl</description>
+    <url>http://github.com/nazarovctrl/telegram-ctrl</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Azimjon Nazarov</name>
+            <email>nazarovazimjon3@gmail.com</email>
+            <organization>io.github.nazarovctrl</organization>
+            <organizationUrl>http://github.com/nazarovctrl/</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/nazarovctrl/telegram-ctrl.git</connection>
+        <developerConnection>scm:git:ssh://github.com:nazarovctrl/telegram-ctrl.git</developerConnection>
+        <url>http://github.com/nazarovctrl/telegram-ctrl/tree/master</url>
+    </scm>
+
     <properties>
         <java.version>17</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
