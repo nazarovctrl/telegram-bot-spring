@@ -1,4 +1,4 @@
-package io.github.nazarovctrl.telegramctrl.sentence;
+package io.github.nazarovctrl.telegramspring.sentence;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
