@@ -1,4 +1,4 @@
-package io.github.nazarovctrl.telegramctrl;
+package io.github.nazarovctrl.telegramspring;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
