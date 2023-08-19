@@ -16,25 +16,24 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 @Component
 public class BotInitializer implements Initialize {
     @Autowired(required = false)
-    private TelegramWebhookBot webBot;
+    private TelegramWebhookBot telegramWebhookBot;
 
     @Autowired(required = false)
-    private TelegramLongPollingBot bot;
+    private TelegramLongPollingBot telegramLongPollingBot;
 
     @PostConstruct
     @Override
     public void initialize() {
-        System.out.println("init");
         try {
             TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
 
-            if (bot != null) {
-                telegramBotsApi.registerBot(bot);
-            } else if (webBot != null) {
+            if (telegramLongPollingBot != null) {
+                telegramBotsApi.registerBot(telegramLongPollingBot);
+            } else if (telegramWebhookBot != null) {
                 SetWebhook setWebhook = SetWebhook.builder()
-                        .url(webBot.getBotUri())
+                        .url(telegramWebhookBot.getBotUri())
                         .build();
-                telegramBotsApi.registerBot(webBot, setWebhook);
+                telegramBotsApi.registerBot(telegramWebhookBot, setWebhook);
             } else {
                 log.error("Could not initialize telegram bot");
                 return;
