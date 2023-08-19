@@ -1,45 +1,38 @@
-package io.github.nazarovctrl.telegramspring;
+package io.github.nazarovctrl.telegramspring.bot.webhook;
 
+import io.github.nazarovctrl.telegramspring.bot.AbstractBotConfig;
+import io.github.nazarovctrl.telegramspring.function.Initialize;
+import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
-import org.telegram.telegrambots.bots.TelegramWebhookBot;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import org.telegram.telegrambots.meta.api.objects.commands.BotCommand;
 import org.telegram.telegrambots.meta.api.objects.commands.scope.BotCommandScopeDefault;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-import java.util.List;
-
 @Slf4j
 @Component
-public class TelegramBot extends TelegramWebhookBot {
+public class TelegramWebhookBot extends org.telegram.telegrambots.bots.TelegramWebhookBot implements Initialize {
 
-    private final BotConfig botConfig;
+    private final AbstractBotConfig botConfig;
 
-    public TelegramBot(BotConfig botConfig) {
+    public TelegramWebhookBot(AbstractBotConfig botConfig) {
         this.botConfig = botConfig;
-        initializeBotCommand(botConfig.getCommandList());
     }
 
-    private void initializeBotCommand(List<BotCommand> commandList) {
+    @PostConstruct
+    public void initialize() {
+        initializeBotCommand();
+    }
+
+    public void initializeBotCommand() {
         try {
-            execute(new SetMyCommands(commandList, new BotCommandScopeDefault(), null));
+            execute(new SetMyCommands(botConfig.getCommandList(), new BotCommandScopeDefault(), null));
             log.info("Command list successfully initialized");
         } catch (TelegramApiException e) {
             log.warn("Command list initializing failed");
         }
-    }
-
-    @Bean(name = "command")
-    CommandLineRunner commandLineRunner(SendMessageService sendMessageService) {
-        return args -> {
-            sendMessageService.setTelegramBot(this);
-            log.info("SendMessageService initialized");
-        };
     }
 
     @Override
