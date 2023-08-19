@@ -1,15 +1,13 @@
-package io.github.nazarovctrl.telegramspring;
+package io.github.nazarovctrl.telegramspring.bot;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.commands.BotCommand;
 
 import java.util.List;
 
-@Component
 @PropertySource("application.properties")
-public abstract class BotConfig {
+public abstract class AbstractBotConfig {
     @Value("${bot.name}")
     private String name;
 
@@ -21,7 +19,7 @@ public abstract class BotConfig {
 
     private final List<BotCommand> commandList;
 
-    public BotConfig() {
+    public AbstractBotConfig() {
         commandList = addBotCommands();
     }
 
