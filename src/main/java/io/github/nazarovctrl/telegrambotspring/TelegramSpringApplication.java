@@ -1,4 +1,4 @@
-package io.github.nazarovctrl.telegramspring;
+package io.github.nazarovctrl.telegrambotspring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
