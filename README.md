@@ -14,7 +14,7 @@
 <details close>
   <summary> 
     <h3>
-        1. Add annotation <tt><b>@EnableTelegramLongPollingBot</b></tt> or <tt><b>@EnableTelegramWebhookBot</b></tt>         
+        1.Add annotation <tt><b>@EnableTelegramLongPollingBot</b></tt> or <tt><b>@EnableTelegramWebhookBot</b></tt>         
         $\textcolor{red}{\textsf{*}}$ 
     </h3>
   </summary>
@@ -29,7 +29,7 @@
 <details close>
   <summary> 
     <h3>
-        2. Inherit from <tt><b>@UpdateController</b></tt> abstract class 
+        2.Inherit from <tt><b>@UpdateController</b></tt> abstract class 
         $\textcolor{red}{\textsf{*}}$ 
     </h3>
   </summary>
@@ -42,7 +42,7 @@
 <details close>
   <summary>
     <h3>
-      3. Add <i>bot configuration</i> to <tt><b>application.properties</b></tt>        
+      3.Add <i>bot configuration</i> to <tt><b>application.properties</b></tt>        
       $\textcolor{red}{\textsf{*}}$ 
     </h3>
   </summary>
@@ -58,7 +58,7 @@
 <details close>
   <summary>
     <h3>
-      4. Send messages(text,media etc.) with <tt><b>MessageSender</b></tt>
+      4.Send messages(text,media etc.) with <tt><b>MessageSender</b></tt>
     </h3>
   </summary>
   <kbd>  <img width="522" alt="image_2023-08-20_21-06-40" src="https://github.com/nazarovctrl/telegram-bot-spring/assets/109890132/bae7bf0a-24bd-4cd2-870c-f7320f287ae7">
