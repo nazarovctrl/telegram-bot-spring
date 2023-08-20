@@ -1,4 +1,4 @@
-## [Java documentation](https://nazarovctrl.github.io/telegram-bot-spring/)
+## [Java documentation](https://javadoc.io/doc/io.github.nazarovctrl/telegram-bot-spring)
 ## Library [link](https://central.sonatype.com/artifact/io.github.nazarovctrl/telegram-bot-spring/) in Maven Central
 ## Maven dependency
 
