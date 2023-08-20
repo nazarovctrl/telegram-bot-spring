@@ -1,8 +1,8 @@
-package io.github.nazarovctrl.telegramspring.bot;
+package io.github.nazarovctrl.telegrambotspring.bot;
 
-import io.github.nazarovctrl.telegramspring.bot.longpolling.TelegramLongPollingBot;
-import io.github.nazarovctrl.telegramspring.bot.webhook.TelegramWebhookBot;
-import io.github.nazarovctrl.telegramspring.function.Initialize;
+import io.github.nazarovctrl.telegrambotspring.bot.longpolling.TelegramLongPollingBot;
+import io.github.nazarovctrl.telegrambotspring.bot.webhook.TelegramWebhookBot;
+import io.github.nazarovctrl.telegrambotspring.function.Initialize;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,15 +12,33 @@ import org.telegram.telegrambots.meta.api.methods.updates.SetWebhook;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
+/**
+ * The class for initializing telegram bot
+ *
+ * @author Azimjon Nazarov
+ */
 @Slf4j
 @Component
 public class BotInitializer implements Initialize {
+
+    /**
+     * Bean
+     * {@link TelegramWebhookBot}
+     */
     @Autowired(required = false)
     private TelegramWebhookBot telegramWebhookBot;
 
+    /**
+     * Bean
+     * {@link TelegramLongPollingBot}
+     */
     @Autowired(required = false)
     private TelegramLongPollingBot telegramLongPollingBot;
 
+    /**
+     * Method for initializing
+     * method works auto after creating {@link BotInitializer} bean
+     */
     @PostConstruct
     @Override
     public void initialize() {
