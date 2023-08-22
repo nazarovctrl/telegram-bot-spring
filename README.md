@@ -53,6 +53,8 @@
 ##### $\textcolor{red}{\textsf{Red line}}$ `is always required field` 
 ##### `bot.name` your telegram bot username
 ##### `bot.token` your telegram bot token
+##### `bot.uri` uri to send a request to your application. 
+
 ##### If you are creating telegram bot with `webhook` you need to add `bot.uri` otherwise you don't need
 
 </details>
