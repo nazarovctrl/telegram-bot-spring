@@ -13,10 +13,10 @@
     <groupId>io.github.nazarovctrl</groupId>
     <artifactId>telegram-bot-spring</artifactId>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <name>${project.groupId}:${project.artifactId}</name>
-    <description>Beta version</description>
-    <url>http://github.com/nazarovctrl/telegram-bot-spring</url>
+    <description>Library for telegram-bot with spring</description>
+    <url>https://github.com/nazarovctrl/telegram-bot-spring</url>
 
     <licenses>
         <license>

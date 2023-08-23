@@ -9,5 +9,5 @@ import io.github.nazarovctrl.telegrambotspring.function.Controller;
  *
  * @author Azimjon Nazarov
  */
-public abstract class UpdateController implements Controller {
+public abstract class AbstractUpdateController implements Controller {
 }
