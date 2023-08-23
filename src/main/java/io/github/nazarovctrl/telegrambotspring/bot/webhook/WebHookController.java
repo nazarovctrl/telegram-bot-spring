@@ -1,6 +1,6 @@
 package io.github.nazarovctrl.telegrambotspring.bot.webhook;
 
-import io.github.nazarovctrl.telegrambotspring.controller.UpdateController;
+import io.github.nazarovctrl.telegrambotspring.controller.AbstractUpdateController;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,14 +17,14 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 public class WebHookController {
 
     /**
-     * {@link UpdateController} for handling update
+     * {@link AbstractUpdateController} for handling update
      */
-    private final UpdateController updateController;
+    private final AbstractUpdateController updateController;
 
     /**
      * @param updateController bean
      */
-    public WebHookController(UpdateController updateController) {
+    public WebHookController(AbstractUpdateController updateController) {
         this.updateController = updateController;
     }
 
