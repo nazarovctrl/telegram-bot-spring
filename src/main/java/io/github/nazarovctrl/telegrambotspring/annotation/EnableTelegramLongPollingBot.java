@@ -1,8 +1,8 @@
 package io.github.nazarovctrl.telegrambotspring.annotation;
 
-import io.github.nazarovctrl.telegrambotspring.bot.BotConfig;
-import io.github.nazarovctrl.telegrambotspring.bot.BotInitializer;
 import io.github.nazarovctrl.telegrambotspring.bot.MessageSender;
+import io.github.nazarovctrl.telegrambotspring.longpolling.TelegramLongPollingBot;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -26,8 +26,8 @@ public @interface EnableTelegramLongPollingBot {
      * The class for creating beans for TelegramLongPollingBot
      */
     @Configuration
-    @ComponentScan(basePackages = "io.github.nazarovctrl.telegrambotspring.bot.longpolling",
-            basePackageClasses = {BotInitializer.class, BotConfig.class, MessageSender.class})
+    @ComponentScan(basePackages = {"io.github.nazarovctrl.telegrambotspring.bot",
+            "io.github.nazarovctrl.telegrambotspring.longpolling"})
     class LongPollingConfig {
     }
 }
