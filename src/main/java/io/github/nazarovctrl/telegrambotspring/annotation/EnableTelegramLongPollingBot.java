@@ -1,8 +1,5 @@
 package io.github.nazarovctrl.telegrambotspring.annotation;
 
-import io.github.nazarovctrl.telegrambotspring.bot.MessageSender;
-import io.github.nazarovctrl.telegrambotspring.longpolling.TelegramLongPollingBot;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;

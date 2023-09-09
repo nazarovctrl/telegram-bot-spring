@@ -31,7 +31,7 @@ public class BotConfig {
      * Uri for sending requests (updates) from telegram bot with webhook to your application
      * Example: https://myserver.com
      */
-    @Value("${bot.uri:#{null}}")
+    @Value(value = "${bot.uri:#{null}}")
     private String uri;
 
     public String getName() {

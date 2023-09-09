@@ -16,7 +16,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
  */
 @Slf4j
 @RestController
-public class  WebHookController {
+public class WebHookController {
 
     /**
      * {@link AbstractUpdateController} for handling update
