@@ -1,10 +1,13 @@
-package io.github.nazarovctrl.telegrambotspring.bot.longpolling;
+package io.github.nazarovctrl.telegrambotspring.longpolling;
 
 import io.github.nazarovctrl.telegrambotspring.bot.BotConfig;
 import io.github.nazarovctrl.telegrambotspring.controller.AbstractUpdateController;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.objects.Update;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 /**
  * The class for used to initializing telegram bot without webhook
@@ -29,19 +32,20 @@ public class TelegramLongPollingBot extends org.telegram.telegrambots.bots.Teleg
      * @param botConfig        bean
      * @param updateController bean
      */
-    public TelegramLongPollingBot(BotConfig botConfig, AbstractUpdateController updateController) {
+    public TelegramLongPollingBot(BotConfig botConfig, AbstractUpdateController updateController) throws TelegramApiException {
+        super(botConfig.getToken());
+
         this.botConfig = botConfig;
         this.updateController = updateController;
+
+        TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
+        telegramBotsApi.registerBot(this);
+        log.info("Telegram long polling bot initialized");
     }
 
     @Override
     public String getBotUsername() {
         return botConfig.getName();
-    }
-
-    @Override
-    public String getBotToken() {
-        return botConfig.getToken();
     }
 
     @Override

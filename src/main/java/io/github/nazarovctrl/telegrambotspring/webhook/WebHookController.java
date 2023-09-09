@@ -1,6 +1,7 @@
-package io.github.nazarovctrl.telegrambotspring.bot.webhook;
+package io.github.nazarovctrl.telegrambotspring.webhook;
 
 import io.github.nazarovctrl.telegrambotspring.controller.AbstractUpdateController;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
  *
  * @author Azimjon Nazarov
  */
+@Slf4j
 @RestController
 public class WebHookController {
 
@@ -26,6 +28,7 @@ public class WebHookController {
      */
     public WebHookController(AbstractUpdateController updateController) {
         this.updateController = updateController;
+        log.info("Webhook controller initialized");
     }
 
     /**
