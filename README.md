@@ -1,48 +1,20 @@
-## [Java documentation](https://javadoc.io/doc/io.github.nazarovctrl/telegram-bot-spring)
-## Library [link](https://central.sonatype.com/artifact/io.github.nazarovctrl/telegram-bot-spring/) in Maven Central
+## [Java documentation](https://javadoc.io/doc/io.github.nazarovctrl/telegram-bot-spring/1.0.2)
+## Library [link](https://central.sonatype.com/artifact/io.github.nazarovctrl/telegram-bot-spring/1.0.2) in Maven Central
 ## Maven dependency
 
         <dependency>
             <groupId>io.github.nazarovctrl</groupId>
             <artifactId>telegram-bot-spring</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.2</version>
         </dependency>
 
 ## How to use library?
 #### $\textcolor{red}{\textsf{*}}$ `required steps`
 
 <details close>
-  <summary> 
-    <h4>
-        1.Add annotation <tt><b>@EnableTelegramLongPollingBot</b></tt> or <tt><b>@EnableTelegramWebhookBot</b></tt>         
-        $\textcolor{red}{\textsf{*}}$ 
-    </h4>
-  </summary>
-<kbd>
-<img width="616" alt="image_2023-08-20_20-52-11" src="https://github.com/nazarovctrl/telegram-bot-spring/assets/109890132/75910725-fd48-4400-9fb0-e06b1dc99e44">
-</kbd>
-  
-##### Use `@EnableTelegramLongPollingBot` annotation for creating telegram bot ***without*** `webhook` 
-##### Use `@EnableTelegramWebhookBot` annotation for telegram bot ***with*** `webhook`
-
-</details>
-<details close>
-  <summary> 
-    <h4>
-        2.Inherit from <tt><b>@UpdateController</b></tt> abstract class 
-        $\textcolor{red}{\textsf{*}}$ 
-    </h4>
-  </summary>
-<kbd><img width="518" alt="image_2023-08-20_21-59-15" src="https://github.com/nazarovctrl/telegram-bot-spring/assets/109890132/a0da8d98-a916-4e6e-a2f7-549af31fa615"></kbd>
-
-##### Override `handle` method
-##### Make your class as a `bean`. _In previous picture was used `@Service` annonation for making the class as a `bean`_
-</details>
-
-<details close>
   <summary>
     <h4>
-      3.Add <i>bot configuration</i> to <tt><b>application.properties</b></tt>        
+      1.Add <i>bot configuration</i> to <tt><b>application.properties</b></tt>        
       $\textcolor{red}{\textsf{*}}$ 
     </h4>
   </summary>
@@ -57,6 +29,35 @@
 
 ##### If you are creating telegram bot with `webhook` you need to add `bot.uri` otherwise you don't need
 
+</details>
+
+<details close>
+  <summary> 
+    <h4>
+        2.Add annotation <tt><b>@EnableTelegramLongPollingBot</b></tt> or <tt><b>@EnableTelegramWebhookBot</b></tt>         
+        $\textcolor{red}{\textsf{*}}$ 
+    </h4>
+  </summary>
+<kbd>
+<img width="616" alt="image_2023-08-20_20-52-11" src="https://github.com/nazarovctrl/telegram-bot-spring/assets/109890132/75910725-fd48-4400-9fb0-e06b1dc99e44">
+</kbd>
+  
+##### Use `@EnableTelegramLongPollingBot` annotation for creating telegram bot ***without*** `webhook` 
+##### Use `@EnableTelegramWebhookBot` annotation for telegram bot ***with*** `webhook`
+
+</details>
+<details close>
+  <summary> 
+    <h4>
+        3.Inherit from <tt><b>@AbstractUpdateController</b></tt> abstract class 
+        $\textcolor{red}{\textsf{*}}$ 
+    </h4>
+  </summary>
+<kbd><img width="750" alt="image" src="https://github.com/nazarovctrl/telegram-bot-spring/assets/109890132/f77b4c72-b1af-4530-933a-152dc826f3a8">
+</kbd>
+        
+##### Override `handle` method
+##### Make your class as a `bean`. _In previous picture was used `@Component` annonation for making the class as a `bean`_
 </details>
 
 <details close>
