@@ -9,7 +9,9 @@
         </dependency>
 
 ## How to use library?
-#### $\textcolor{red}{\textsf{*}}$ `required steps`
+#### 
+
+$\textcolor{red}{\textsf{*}}$ `required steps`
 
 <details close>
   <summary>
