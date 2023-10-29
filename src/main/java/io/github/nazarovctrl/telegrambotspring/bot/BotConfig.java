@@ -1,7 +1,6 @@
 package io.github.nazarovctrl.telegrambotspring.bot;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Component;
  * @author Azimjon Nazarov
  */
 @Component
-@PropertySource("application.properties")
 public class BotConfig {
 
     /**
