@@ -14,7 +14,7 @@ public class MessageSender extends DefaultAbsSender {
     /**
      * @param botConfig bean used to get telegram bot token
      */
-    public MessageSender(BotConfig botConfig) {
-        super(new CtrlBotOptions(), botConfig.getToken());
+    public MessageSender(CtrlBotOptions botOptions, BotConfig botConfig) {
+        super(botOptions, botConfig.getToken());
     }
 }
