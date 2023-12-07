@@ -6,7 +6,7 @@ import org.telegram.telegrambots.bots.DefaultBotOptions;
 
 @Component
 public class CtrlBotOptions extends DefaultBotOptions {
-    @Value("#{systemProperties['bot.base_url'] ?: 'https://api.telegram.org/bot'}")
+    @Value("${bot.base_url:https://api.telegram.org/bot}")
     private String base_url;
 
     @Override
