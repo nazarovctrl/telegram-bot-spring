@@ -21,15 +21,15 @@ $\textcolor{red}{\textsf{*}}$ `required steps`
     </h4>
   </summary>
 <kbd>
-<img width="454" alt="image_2023-08-20_21-00-24" src="https://github.com/nazarovctrl/telegram-bot-spring/assets/109890132/9dee056e-6e08-42c3-8b06-06e42f96536b">
+        
+<img width="454" alt="image_2023-08-20_21-00-24" src="https://github.com/nazarovctrl/telegram-bot-spring/assets/109890132/fa257462-6667-41f2-955a-4c76012d5d6e">
 </kbd>
 
 ##### $\textcolor{red}{\textsf{Red line}}$ `is always required field` 
 ##### `bot.name` your telegram bot username
 ##### `bot.token` your telegram bot token
-##### `bot.uri` uri to send a request to your application. 
-
-##### If you are creating telegram bot with `webhook` you need to add `bot.uri` otherwise you don't need
+##### `bot.uri` uri to send a request to your application. If you are creating telegram bot with `webhook` you need to add `bot.uri` otherwise you don't need
+##### `bot.base_url` url to send reqeust to your [Local Bot API Server](https://core.telegram.org/bots/api#using-a-local-bot-api-server) (by default `https://api.telegram.org/bot`). If you are creating telegram bot with [Local Bot API Server](https://core.telegram.org/bots/api#using-a-local-bot-api-server) you need to add `bot.base_url` otherwise you don't need
 
 </details>
 
