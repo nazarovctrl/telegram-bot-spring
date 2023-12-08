@@ -21,8 +21,8 @@ $\textcolor{red}{\textsf{*}}$ `required steps`
     </h4>
   </summary>
 <kbd>
-        
-<img width="454" alt="image_2023-08-20_21-00-24" src="https://github.com/nazarovctrl/telegram-bot-spring/assets/109890132/fa257462-6667-41f2-955a-4c76012d5d6e">
+   
+<img width="454" alt="image_2023-08-20_21-00-24" src="https://github.com/nazarovctrl/telegram-bot-spring/assets/109890132/f8f653ce-07fa-4d8a-86d0-17389105db8c">
 </kbd>
 
 ##### $\textcolor{red}{\textsf{Red line}}$ `is always required field` 
