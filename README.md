@@ -66,7 +66,7 @@ $\textcolor{red}{\textsf{*}}$ `required steps`
   <summary>
     <h4>
       4.Send messages(text,media etc.) with <tt><b>MessageSender</b></tt>
-      $\textcolor{red}{\textsf{*}}$ 
+      $\textcolor{green}{\textsf{*}}$ 
     </h4>
   </summary>
   <kbd>  
