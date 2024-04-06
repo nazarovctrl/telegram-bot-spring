@@ -6,14 +6,18 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.2</version>
+        <version>3.1.4</version>
         <relativePath/>
     </parent>
+
+    <properties>
+        <java.version>17</java.version>
+    </properties>
 
     <groupId>io.github.nazarovctrl</groupId>
     <artifactId>telegram-bot-spring</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.6-beta</version>
+    <version>1.0.6</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Library to make it easier to create a telegram-bot in spring</description>
     <url>https://github.com/nazarovctrl/telegram-bot-spring</url>
@@ -41,7 +45,7 @@
             <name>Azimjon Nazarov</name>
             <email>nazarovazimjon3@gmail.com</email>
             <organization>io.github.nazarovctrl</organization>
-            <organizationUrl>http://github.com/nazarovctrl/</organizationUrl>
+            <organizationUrl>https://github.com/nazarovctrl/</organizationUrl>
         </developer>
     </developers>
 
@@ -50,10 +54,6 @@
         <developerConnection>scm:git:ssh://github.com:nazarovctrl/telegram-bot-spring.git</developerConnection>
         <url>https://github.com/nazarovctrl/telegram-bot-spring/tree/master</url>
     </scm>
-
-    <properties>
-        <java.version>17</java.version>
-    </properties>
 
     <profiles>
         <profile>
