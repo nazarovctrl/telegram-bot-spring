@@ -13,7 +13,7 @@
     <groupId>io.github.nazarovctrl</groupId>
     <artifactId>telegram-bot-spring</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.5</version>
+    <version>1.0.6-beta</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Library to make it easier to create a telegram-bot in spring</description>
     <url>https://github.com/nazarovctrl/telegram-bot-spring</url>
