@@ -1,7 +1,7 @@
 package io.github.nazarovctrl.telegrambotspring.longpolling;
 
 import io.github.nazarovctrl.telegrambotspring.bot.BotConfig;
-import io.github.nazarovctrl.telegrambotspring.bot.CtrlBotOptions;
+import io.github.nazarovctrl.telegrambotspring.bot.TelegramBotAPIOptions;
 import io.github.nazarovctrl.telegrambotspring.controller.AbstractUpdateController;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -33,7 +33,7 @@ public class TelegramLongPollingBot extends org.telegram.telegrambots.bots.Teleg
      * @param botConfig        bean
      * @param updateController bean
      */
-    public TelegramLongPollingBot(CtrlBotOptions options, BotConfig botConfig, AbstractUpdateController updateController) throws TelegramApiException {
+    public TelegramLongPollingBot(TelegramBotAPIOptions options, BotConfig botConfig, AbstractUpdateController updateController) throws TelegramApiException {
         super(options, botConfig.getToken());
         this.botConfig = botConfig;
         this.updateController = updateController;
