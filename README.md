@@ -1,3 +1,5 @@
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.nazarovctrl/telegram-bot-spring/badge.svg)](https://mvnrepository.com/artifact/io.github.nazarovctrl/telegram-bot-spring)
+
 ## [Java documentation](https://javadoc.io/doc/io.github.nazarovctrl/telegram-bot-spring/1.0.6)
 ## Library [link](https://central.sonatype.com/artifact/io.github.nazarovctrl/telegram-bot-spring/1.0.6) in Maven Central
 ## Maven dependency
