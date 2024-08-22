@@ -1,0 +1,24 @@
+{
+  "properties": [
+    {
+      "name": "bot.name",
+      "type": "java.lang.String",
+      "description": "Telegram bot username."
+    },
+    {
+      "name": "bot.token",
+      "type": "java.lang.String",
+      "description": "Telegram bot token."
+    },
+    {
+      "name": "bot.uri",
+      "type": "java.lang.String",
+      "description": "URI to send a request to your application. Required only if you are creating telegram bot with webhook."
+    },
+    {
+      "name": "bot.base_url",
+      "type": "java.lang.String",
+      "description": "URL to send a request to your Local Bot API Server (by default https://api.telegram.org/bot). Required only if you are creating telegram bot with Local Bot API Server."
+    }
+  ]
+}
