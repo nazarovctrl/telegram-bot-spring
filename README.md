@@ -1,13 +1,13 @@
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.nazarovctrl/telegram-bot-spring/badge.svg)](https://mvnrepository.com/artifact/io.github.nazarovctrl/telegram-bot-spring)
 
-## [Java documentation](https://javadoc.io/doc/io.github.nazarovctrl/telegram-bot-spring/1.0.6)
-## Library [link](https://central.sonatype.com/artifact/io.github.nazarovctrl/telegram-bot-spring/1.0.6) in Maven Central
+## [Java documentation](https://javadoc.io/doc/io.github.nazarovctrl/telegram-bot-spring/1.0.7)
+## Library [link](https://central.sonatype.com/artifact/io.github.nazarovctrl/telegram-bot-spring/1.0.7) in Maven Central
 ## Maven dependency
 
         <dependency>
             <groupId>io.github.nazarovctrl</groupId>
             <artifactId>telegram-bot-spring</artifactId>
-            <version>1.0.6</version>
+            <version>1.0.7</version>
         </dependency>
 
 ## How to use library?
