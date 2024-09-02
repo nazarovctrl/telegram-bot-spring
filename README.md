@@ -7,7 +7,7 @@
         <dependency>
             <groupId>io.github.nazarovctrl</groupId>
             <artifactId>telegram-bot-spring</artifactId>
-            <version>1.0.7</version>
+            <version>1.0.8</version>
         </dependency>
 
 ## How to use library?
