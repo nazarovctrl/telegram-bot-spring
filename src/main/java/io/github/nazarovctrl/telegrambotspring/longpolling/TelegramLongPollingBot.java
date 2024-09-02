@@ -46,7 +46,6 @@ public class TelegramLongPollingBot extends org.telegram.telegrambots.bots.Teleg
      */
     private final ExecutorService executorService = Executors.newCachedThreadPool();
 
-
     public TelegramLongPollingBot(TelegramBotAPIOptions options, BotConfig botConfig, AbstractUpdateController updateController) throws TelegramApiException {
         super(options, botConfig.getToken());
         this.botConfig = botConfig;
