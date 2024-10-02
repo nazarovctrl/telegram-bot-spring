@@ -83,3 +83,10 @@ $\textcolor{red}{\textsf{*}}$ `required steps`
   <img width="562" alt="image_2023-08-20_21-15-45" src="https://github.com/nazarovctrl/telegram-bot-spring/assets/109890132/d7c6cade-dfb5-4438-b5cb-8a24382d0ca0">
 </kbd>
 </details>
+
+
+## Article link(uzbek)
+
+dasturlash.uz: https://www.dasturlash.uz/article/telegram-bot-spring
+
+upper.uz: https://upper.uz/web/articles/167
